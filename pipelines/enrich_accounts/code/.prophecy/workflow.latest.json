@@ -1,0 +1,2499 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.0.29",
+        "pyPiVersion" : "1.9.9"
+      }
+    },
+    "id" : "1",
+    "uri" : "pipelines/enrich_accounts",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "enrich_accounts",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true
+    },
+    "language" : "python",
+    "fabricId" : "16153",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "karunkumarbussarigmailcomteam.rainforestbizproject.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "courselabs.courselabsources.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "13587",
+      "projectName" : "course_lab_sources",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "enrich_accounts",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "xnkkkyouB-AMcim5kqZtI$$VAhfFI3Xvu8cKuZRXk19A",
+    "source" : "pmVdnAXDhla3ft4GrTVNS$$rbMUL-dtEYLfmIPaVRbhP",
+    "sourcePort" : "DrWeSvAb1wH17IF-AyE60$$Pyeaf6YUrYGny8J5grSb5",
+    "target" : "z9g-FOfwnRgXQmN7O4-kf$$__QSW4VAI7vdEqOfBNTLA",
+    "targetPort" : "2ZAZhXO-upL5dJhxbtSzr$$fHFTGkvQmqOMynM1HXdzo"
+  }, {
+    "id" : "3AOZf89pxo3QMyw6V2yfu$$91QpkeHovhROhrF6E8k6j",
+    "source" : "z9g-FOfwnRgXQmN7O4-kf$$__QSW4VAI7vdEqOfBNTLA",
+    "sourcePort" : "dGD9aoe-zoLpZXh-rpEO0$$xgM4JWiodaS12F3QuA6Tl",
+    "target" : "TLLS5jEkDo_wc-y1bgoLS$$D1cbC64GRt3tWayG3zVue",
+    "targetPort" : "P8figGuhstEstoS5tmGtG$$DAXxFFL_KEwUA1B0QL3h0"
+  }, {
+    "id" : "3veabtxohP8us7lxk5bv4",
+    "source" : "chjPGdNjVkiiV_tXS4qqQ$$P9wFWQV8TqMkf8GB_ktUG",
+    "sourcePort" : "elUazVU3brZrcIZak0Nf5$$atsgPOJP9jbzASroABJeI",
+    "target" : "HfjzRJJFtt4XxmpJb7oMR$$8Ml02RbQx6pitJs2i061J",
+    "targetPort" : "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW"
+  }, {
+    "id" : "-KxVol5w3DtOIJFDPqV8B",
+    "source" : "TLLS5jEkDo_wc-y1bgoLS$$D1cbC64GRt3tWayG3zVue",
+    "sourcePort" : "uKlbffXFcWgGh6Y0LCM3Y$$hur8E4CcfUP7Fed3BE0bL",
+    "target" : "HfjzRJJFtt4XxmpJb7oMR$$8Ml02RbQx6pitJs2i061J",
+    "targetPort" : "5yzBsLYyun2NqdD8XeQ_b$$40-dvaoocsy-medppI0Wy"
+  }, {
+    "id" : "uPpl1MrA88beBzrt66gti",
+    "source" : "HfjzRJJFtt4XxmpJb7oMR$$8Ml02RbQx6pitJs2i061J",
+    "sourcePort" : "e0uCbv5dMpqGQJsN1IKIC$$e5PZxaMs2ErD4tjyBMjFb",
+    "target" : "EH5heFQmgW04ULi0WvVzf$$Q9F2UMIeVkRMhef0-l6mR",
+    "targetPort" : "jIf9_LR9jJkrnpMXhmjfd$$I5KaTKd1737igQxksEnf0"
+  } ],
+  "processes" : {
+    "z9g-FOfwnRgXQmN7O4-kf$$__QSW4VAI7vdEqOfBNTLA" : {
+      "id" : "z9g-FOfwnRgXQmN7O4-kf$$__QSW4VAI7vdEqOfBNTLA",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "selectfields_Opportunity",
+        "slug" : "selectfields_Opportunity",
+        "x" : -1640,
+        "y" : -640,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reformats data by selecting specific columns and creating a new column representing the quarter and year of the close date.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2ZAZhXO-upL5dJhxbtSzr$$fHFTGkvQmqOMynM1HXdzo",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IsDeleted",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AccountId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IsPrivate",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "StageName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "StageSortOrder",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Amount",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Probability",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ExpectedRevenue",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TotalOpportunityQuantity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CloseDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NextStep",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LeadSource",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IsClosed",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IsWon",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ForecastCategory",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ForecastCategoryName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CampaignId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HasOpportunityLineItem",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Pricebook2Id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OwnerId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CreatedDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CreatedById",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastModifiedDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastModifiedById",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SystemModstamp",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastActivityDate",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastStageChangeDate",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FiscalYear",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FiscalQuarter",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ContactId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PrimaryPartnerAccountId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ContractId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastAmountChangedHistoryId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastCloseDateChangedHistoryId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DeliveryInstallationStatus__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TrackingNumber__c",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OrderNumber__c",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CurrentGenerators__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "MainCompetitors__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "dGD9aoe-zoLpZXh-rpEO0$$xgM4JWiodaS12F3QuA6Tl",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "AccountId",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "AccountId"
+          },
+          "description" : ""
+        }, {
+          "target" : "Amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Amount"
+          },
+          "description" : ""
+        }, {
+          "target" : "ExpectedRevenue",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ExpectedRevenue"
+          },
+          "description" : ""
+        }, {
+          "target" : "CloseQtr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat(CAST(year(to_date(CloseDate)) AS STRING), 'Q', CAST(quarter(CloseDate) AS STRING))"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "2ZAZhXO-upL5dJhxbtSzr$$fHFTGkvQmqOMynM1HXdzo##CloseDate", "2ZAZhXO-upL5dJhxbtSzr$$fHFTGkvQmqOMynM1HXdzo##Amount", "2ZAZhXO-upL5dJhxbtSzr$$fHFTGkvQmqOMynM1HXdzo##ExpectedRevenue", "2ZAZhXO-upL5dJhxbtSzr$$fHFTGkvQmqOMynM1HXdzo##AccountId" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "EH5heFQmgW04ULi0WvVzf$$Q9F2UMIeVkRMhef0-l6mR" : {
+      "id" : "EH5heFQmgW04ULi0WvVzf$$Q9F2UMIeVkRMhef0-l6mR",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "enriched_accounts",
+        "slug" : "enriched_accounts",
+        "x" : -940,
+        "y" : -800,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "jIf9_LR9jJkrnpMXhmjfd$$I5KaTKd1737igQxksEnf0",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IsDeleted",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "MasterRecordId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ParentId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingStreet",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingPostalCode",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingCountry",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingLatitude",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingLongitude",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingGeocodeAccuracy",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingStreet",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingPostalCode",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingCountry",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingLatitude",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingLongitude",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingGeocodeAccuracy",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Fax",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AccountNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Website",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sic",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Industry",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AnnualRevenue",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NumberOfEmployees",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Ownership",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TickerSymbol",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Rating",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Site",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OwnerId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CreatedDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CreatedById",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastModifiedDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastModifiedById",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SystemModstamp",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastActivityDate",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jigsaw",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JigsawCompanyId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CleanStatus",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AccountSource",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DunsNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Tradestyle",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NaicsCode",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NaicsDesc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "YearStarted",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SicDesc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DandbCompanyId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OperatingHoursId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CustomerPriority__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SLA__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Active__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NumberofLocations__c",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UpsellOpportunity__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SLASerialNumber__c",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SLAExpirationDate__c",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/enriched_accounts"
+      }
+    },
+    "HfjzRJJFtt4XxmpJb7oMR$$8Ml02RbQx6pitJs2i061J" : {
+      "id" : "HfjzRJJFtt4XxmpJb7oMR$$8Ml02RbQx6pitJs2i061J",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "account_join",
+        "slug" : "account_join",
+        "x" : -1180,
+        "y" : -800,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Joins two dataframes based on the \"Id\" and \"AccountId\" columns, selecting specific columns from the left dataframe and renaming them.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IsDeleted",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "MasterRecordId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ParentId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingStreet",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingPostalCode",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingCountry",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingLatitude",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingLongitude",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillingGeocodeAccuracy",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingStreet",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingPostalCode",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingCountry",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingLatitude",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingLongitude",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShippingGeocodeAccuracy",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Fax",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AccountNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Website",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sic",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Industry",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AnnualRevenue",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NumberOfEmployees",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Ownership",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TickerSymbol",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Rating",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Site",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OwnerId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CreatedDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CreatedById",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastModifiedDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastModifiedById",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SystemModstamp",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastActivityDate",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jigsaw",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JigsawCompanyId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CleanStatus",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AccountSource",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DunsNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Tradestyle",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NaicsCode",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NaicsDesc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "YearStarted",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SicDesc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DandbCompanyId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OperatingHoursId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CustomerPriority__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SLA__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Active__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NumberofLocations__c",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UpsellOpportunity__c",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SLASerialNumber__c",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SLAExpirationDate__c",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "5yzBsLYyun2NqdD8XeQ_b$$40-dvaoocsy-medppI0Wy",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "AccountId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NumOpportunites",
+              "type" : "long",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Amount",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ExpectedRevenue",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastclosedQtr",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "e0uCbv5dMpqGQJsN1IKIC$$e5PZxaMs2ErD4tjyBMjFb",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Id == in1.AccountId"
+          },
+          "joinType" : "left_outer"
+        } ],
+        "expressions" : [ {
+          "target" : "Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "IsDeleted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.IsDeleted"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "MasterRecordId",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.MasterRecordId"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Type"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ParentId",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ParentId"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BillingStreet",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.BillingStreet"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BillingCity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.BillingCity"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BillingState",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.BillingState"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BillingPostalCode",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.BillingPostalCode"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BillingCountry",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.BillingCountry"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BillingLatitude",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.BillingLatitude"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BillingLongitude",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.BillingLongitude"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BillingGeocodeAccuracy",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.BillingGeocodeAccuracy"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ShippingStreet",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ShippingStreet"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ShippingCity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ShippingCity"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ShippingState",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ShippingState"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ShippingPostalCode",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ShippingPostalCode"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ShippingCountry",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ShippingCountry"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ShippingLatitude",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ShippingLatitude"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ShippingLongitude",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ShippingLongitude"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ShippingGeocodeAccuracy",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ShippingGeocodeAccuracy"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Phone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Phone"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Fax",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Fax"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "AccountNumber",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.AccountNumber"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Website",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Website"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Sic",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Sic"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Industry",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Industry"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "AnnualRevenue",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.AnnualRevenue"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "NumberOfEmployees",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.NumberOfEmployees"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Ownership",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Ownership"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "TickerSymbol",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.TickerSymbol"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Description",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Description"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Rating",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Rating"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Site",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Site"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "OwnerId",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.OwnerId"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "CreatedDate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.CreatedDate"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "CreatedById",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.CreatedById"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "LastModifiedDate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.LastModifiedDate"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "LastModifiedById",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.LastModifiedById"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "SystemModstamp",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.SystemModstamp"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "LastActivityDate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.LastActivityDate"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Jigsaw",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Jigsaw"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "JigsawCompanyId",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.JigsawCompanyId"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "CleanStatus",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.CleanStatus"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "AccountSource",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.AccountSource"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "DunsNumber",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.DunsNumber"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Tradestyle",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Tradestyle"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "NaicsCode",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.NaicsCode"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "NaicsDesc",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.NaicsDesc"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "YearStarted",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.YearStarted"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "SicDesc",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.SicDesc"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "DandbCompanyId",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.DandbCompanyId"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "OperatingHoursId",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.OperatingHoursId"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "CustomerPriority__c",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.CustomerPriority__c"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "SLA__c",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.SLA__c"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Active__c",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Active__c"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "NumberofLocations__c",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.NumberofLocations__c"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "UpsellOpportunity__c",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.UpsellOpportunity__c"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "SLASerialNumber__c",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.SLASerialNumber__c"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "SLAExpirationDate__c",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.SLAExpirationDate__c"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "5yzBsLYyun2NqdD8XeQ_b$$40-dvaoocsy-medppI0Wy",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "5yzBsLYyun2NqdD8XeQ_b$$40-dvaoocsy-medppI0Wy##AccountId", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Id", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##ShippingState", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##BillingCountry", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##TickerSymbol", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##AccountSource", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##ShippingPostalCode", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Ownership", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Id", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##OwnerId", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##CreatedById", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##BillingGeocodeAccuracy", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Site", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##BillingCity", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##ShippingCountry", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##ShippingLongitude", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##CustomerPriority__c", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##ShippingLatitude", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##NumberofLocations__c", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Phone", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##BillingState", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##BillingLatitude", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Rating", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##SLA__c", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Industry", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##LastModifiedById", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##CreatedDate", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Description", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Active__c", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##AnnualRevenue", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##BillingPostalCode", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##UpsellOpportunity__c", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##ShippingStreet", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##ShippingCity", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##SicDesc", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##YearStarted", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##SLASerialNumber__c", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##ParentId", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##NaicsDesc", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##AccountNumber", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##SystemModstamp", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##CleanStatus", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Website", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##LastModifiedDate", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##ShippingGeocodeAccuracy", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Name", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Type", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##OperatingHoursId", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##BillingLongitude", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##MasterRecordId", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##NaicsCode", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##IsDeleted", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##DandbCompanyId", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##LastActivityDate", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##JigsawCompanyId", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Fax", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Sic", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##SLAExpirationDate__c", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##NumberOfEmployees", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Tradestyle", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##DunsNumber", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##Jigsaw", "fmxnhTta5p7Q3Iipav9FN$$pFsCV-c9joklwf6_sOCOW##BillingStreet" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "TLLS5jEkDo_wc-y1bgoLS$$D1cbC64GRt3tWayG3zVue" : {
+      "id" : "TLLS5jEkDo_wc-y1bgoLS$$D1cbC64GRt3tWayG3zVue",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "aggregate_opportunities_by_account",
+        "slug" : "aggregate_opportunities_by_account",
+        "x" : -1420,
+        "y" : -640,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Aggregates opportunities by account, providing information such as the number of opportunities, total amount, expected revenue, and the most recent closed quarter.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "P8figGuhstEstoS5tmGtG$$DAXxFFL_KEwUA1B0QL3h0",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "AccountId",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Amount",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ExpectedRevenue",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CloseQtr",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "uKlbffXFcWgGh6Y0LCM3Y$$hur8E4CcfUP7Fed3BE0bL",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "NumOpportunites",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "count(1)"
+          },
+          "description" : "",
+          "_row_id" : "c_116"
+        }, {
+          "target" : "Amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(Amount)"
+          },
+          "description" : "",
+          "_row_id" : "c_120"
+        }, {
+          "target" : "ExpectedRevenue",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(ExpectedRevenue)"
+          },
+          "description" : "",
+          "_row_id" : "c_124"
+        }, {
+          "target" : "LastclosedQtr",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "max(CloseQtr)"
+          },
+          "description" : "",
+          "_row_id" : "c_128"
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "P8figGuhstEstoS5tmGtG$$DAXxFFL_KEwUA1B0QL3h0##CloseQtr", "P8figGuhstEstoS5tmGtG$$DAXxFFL_KEwUA1B0QL3h0##AccountId", "P8figGuhstEstoS5tmGtG$$DAXxFFL_KEwUA1B0QL3h0##Amount", "P8figGuhstEstoS5tmGtG$$DAXxFFL_KEwUA1B0QL3h0##ExpectedRevenue" ],
+        "groupBy" : [ {
+          "target" : "AccountId",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "AccountId"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=12654&path=gems/Aggregate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "pmVdnAXDhla3ft4GrTVNS$$rbMUL-dtEYLfmIPaVRbhP" : {
+      "id" : "pmVdnAXDhla3ft4GrTVNS$$rbMUL-dtEYLfmIPaVRbhP",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "salesforce-Opportunity",
+        "slug" : "salesforce_Opportunity",
+        "x" : -1860,
+        "y" : -640,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reads Salesforce Opportunity data from a CSV file and creates a DataFrame with structured schema.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "DrWeSvAb1wH17IF-AyE60$$Pyeaf6YUrYGny8J5grSb5",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "gitUri=http://gitserver:3000/wvwrv9bI_team_5938/wvwrv9bI_project_13587.git&subPath=&tag=course_lab_sources/0.0.3&projectSubscriptionProjectId=13587&path=datasets/salesforce-Opportunity"
+      }
+    },
+    "chjPGdNjVkiiV_tXS4qqQ$$P9wFWQV8TqMkf8GB_ktUG" : {
+      "id" : "chjPGdNjVkiiV_tXS4qqQ$$P9wFWQV8TqMkf8GB_ktUG",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "salesforce-Account",
+        "slug" : "salesforce_Account",
+        "x" : -1860,
+        "y" : -860,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reads Salesforce Account data from a CSV file and creates a DataFrame with structured schema.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "elUazVU3brZrcIZak0Nf5$$atsgPOJP9jbzASroABJeI",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "gitUri=http://gitserver:3000/wvwrv9bI_team_5938/wvwrv9bI_project_13587.git&subPath=&tag=course_lab_sources/0.0.3&projectSubscriptionProjectId=13587&path=datasets/salesforce-Account"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}

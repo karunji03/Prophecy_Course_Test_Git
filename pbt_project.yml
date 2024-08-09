@@ -1,0 +1,133 @@
+name: rainforest_biz_project
+description: ''
+version: 0.0.1
+author: karunkumarbussari@gmail.com
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: rainforestbizproject
+  parentArtefactID: karunkumarbussarigmailcomteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2024-08-09 22:29:56'
+pipelines:
+  pipelines/enrich_accounts:
+    name: enrich_accounts
+    description: ''
+    author: karunkumarbussari@gmail.com
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-08-09 22:29:56'
+    datasets:
+      inputs:
+      - gitUri=http://gitserver:3000/wvwrv9bI_team_5938/wvwrv9bI_project_13587.git&subPath=&tag=course_lab_sources/0.0.3&projectSubscriptionProjectId=13587&path=datasets/salesforce-Account
+      - gitUri=http://gitserver:3000/wvwrv9bI_team_5938/wvwrv9bI_project_13587.git&subPath=&tag=course_lab_sources/0.0.3&projectSubscriptionProjectId=13587&path=datasets/salesforce-Opportunity
+      outputs:
+      - datasets/enriched_accounts
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/enriched_accounts:
+    name: enriched_accounts
+    description: ''
+    author: karunkumarbussari@gmail.com
+    createdAt: '2024-08-09 22:54:08'
+    mode: batch
+    physicalDatasets:
+      workshop-fabric:
+        fabricId: 16153
+        datasetType: Database
+        description: ''
+        author: karunkumarbussari@gmail.com
+        createdAt: '2024-08-09 22:54:08'
+templates: {}
+jobs:
+  jobs/daily_accounts:
+    name: daily_accounts
+    description: ''
+    fabricUID: 16153
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 5 16 * * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/enrich_accounts
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2024-08-09 23:00:25'
+    author: karunkumarbussari@gmail.com
+    models: []
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-08-09 22:29:56'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- type: plibMaven
+  modifiedAt: '2024-08-09T22:29:57.887436Z'
+  name: plibMaven
+  version: 8.0.29
+  id: '331961106'
+  createdAt: '2024-08-09T22:29:57.887343Z'
+- type: plibPypi
+  modifiedAt: '2024-08-09T22:29:57.887477Z'
+  name: plibPypi
+  version: 1.9.9
+  id: '1406790477'
+  createdAt: '2024-08-09T22:29:57.887461Z'
+projectDependencies:
+  '12654':
+    projectUID: 12654
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
+    version: 0.2.25
+    isDefault: true
+    author: null
+    createdAt: '2024-08-09 22:12:59'
+  '13587':
+    projectUID: 13587
+    projectName: course_lab_sources
+    repositoryPath: gitUri=http://gitserver:3000/wvwrv9bI_team_5938/wvwrv9bI_project_13587.git&subPath=
+    version: course_lab_sources/0.0.3
+    isDefault: false
+    author: null
+    createdAt: '2024-08-09 22:12:59'
+  '12655':
+    projectUID: 12655
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
+    version: 0.0.8
+    isDefault: true
+    author: null
+    createdAt: '2024-08-09 22:12:59'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
