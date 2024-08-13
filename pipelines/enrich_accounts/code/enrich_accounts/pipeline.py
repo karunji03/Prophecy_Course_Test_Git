@@ -11,6 +11,7 @@ def pipeline(spark: SparkSession) -> None:
     df_salesforce_Opportunity_1 = salesforce_Opportunity_1(spark)
     df_left_outer_join_by_id = left_outer_join_by_id(spark, df_salesforce_Account_1, df_salesforce_Opportunity_1)
     df_salesforce_Account = salesforce_Account(spark)
+    df_select_from_temp_view = select_from_temp_view(spark, df_salesforce_Account)
     df_column_comparison_summary = column_comparison_summary(spark, df_salesforce_Account_1, df_salesforce_Account)
     df_filter_true = filter_true(spark, df_salesforce_Account)
     df_rename_and_drop_columns = rename_and_drop_columns(spark, df_salesforce_Account)
@@ -33,6 +34,7 @@ def pipeline(spark: SparkSession) -> None:
     df_by_name_asc = by_name_asc(spark, df_salesforce_Account)
     df_Repartition_1 = Repartition_1(spark, df_salesforce_Account)
     df_Reformat_1 = Reformat_1(spark, df_distribute_by_billing_city_out0)
+    Target(spark, df_select_from_temp_view)
 
 def main():
     spark = SparkSession.builder\

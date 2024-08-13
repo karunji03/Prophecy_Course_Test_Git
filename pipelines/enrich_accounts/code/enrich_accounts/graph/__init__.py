@@ -1,3 +1,4 @@
+from .select_from_temp_view import select_from_temp_view
 from .filter_true import filter_true
 from .aggregate_opportunities_by_account import aggregate_opportunities_by_account
 from .WindowFunction_1 import WindowFunction_1
@@ -11,6 +12,7 @@ from .salesforce_Opportunity import salesforce_Opportunity
 from .SetOperation_1 import SetOperation_1
 from .salesforce_Account import salesforce_Account
 from .enriched_accounts import enriched_accounts
+from .Target import Target
 from .select_relevant_columns import select_relevant_columns
 from .account_join import account_join
 from .salesforce_Account_1 import salesforce_Account_1
